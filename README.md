@@ -1,4 +1,4 @@
-# 시작
+# Start
 
 - `npx create-next-app@latest .`
 - `npm run dev`
