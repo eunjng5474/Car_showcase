@@ -1,4 +1,4 @@
-# 시작
+# Intro and Layout
 
 - `npx create-next-app@latest .`
 - `npm run dev`
@@ -51,3 +51,21 @@ export default CustomButton;
 ## app
 
 - layout.tsx에서 Navbar, Footer 추가
+
+# Car Catalogue
+
+## components
+
+### SearchManufacturer.tsx
+
+- `npm install @headlessui/react`
+- 입력값이 포함된 목록 보여주기
+
+```typescript
+const filteredManufacturers =
+  query === ''
+    ? manufacturers
+    : manufacturers.filter((item) =>
+        item.toLowerCase().replace(/\s+/g, '').includes(query.toLowerCase().replace(/\s+/g, ''))
+      );
+```
